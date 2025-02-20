@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap via npm</title>
+
+    <!-- Link to Custom Bootstrap Build -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger shadow p-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to My Website</h1>
+            <p class="lead">This is a simple Bootstrap 5 example to get started.</p>
+            <a href="#" class="btn btn-light btn-lg mt-3">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Card Section -->
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title fs-4 fw-bold">Feature 1</h2>
+                        <p class="card-text text-secondary">This is a description of the first feature.</p>
+                        <button class="btn text-white px-3 py-2" style="background-color: #ec4899;">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title fs-4 fw-bold">Feature 2</h2>
+                        <p class="card-text text-secondary">This is a description of the second feature.</p>
+                        <button class="btn text-white px-3 py-2" style="background-color: #facc15;">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title fs-4 fw-bold">Feature 3</h2>
+                        <p class="card-text text-secondary">This is a description of the third feature.</p>
+                        <button class="btn text-white px-3 py-2" style="background-color: #22c55e;">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
