@@ -1,6 +1,0 @@
-// Configure Bootstrap before importing it
-$primary: #0d6efd; // Change the primary color if needed
-
-// Import Bootstrap
-@use "sass:math";  // Required for new Sass versions
-@use "../node_modules/bootstrap/scss/bootstrap";

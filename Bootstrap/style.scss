@@ -1,0 +1,96 @@
+
+:root {
+  --bs-font-sans-serif: 'JetBrains Mono', monospace;
+  --bs-body-font-family: 'JetBrains Mono', monospace;
+  --background-color: #212121;
+}
+
+* {
+  border-color: var(--border-color) !important;
+}
+
+.custom-bg {
+  background-color: var(--background-color) !important;
+}
+
+.custom-border {
+  border: var(--border-color) !important;
+}
+
+body, * {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+html, body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+svg {
+  fill: white;
+}
+.ps-6 {
+  padding-left: 4rem !important; /* 64px */
+}
+
+.ps-7 {
+  padding-left: 5rem !important; /* 80px */
+}
+.pe-6 {
+  padding-right: 4rem !important; /* 64px */
+}
+
+.pe-7 {
+  padding-right: 5rem !important; /* 80px */
+}
+
+.neontext {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 
+      0 0 3px #fff,
+      0 0 6px #fff !important;
+}
+
+.neon-hover:hover {
+  transform: scale(1.1);
+  text-shadow: 
+      0 0 3px #fff,
+      0 0 6px #fff,
+      0 0 12px #fff,
+      0 0 24px #fff,
+      0 0 40px #fff !important;
+  transition: transform 0.3s ease-in-out,text-shadow 0.3s ease-in-out;
+}
+
+.svg-hover:hover {
+  transform: scale(1.3); 
+  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white) drop-shadow(0 0 30px white);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.custom-btn {
+  background-color: #212121;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.custom-btn:hover .svg-hover {
+  transform: scale(1.3); 
+  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white) drop-shadow(0 0 30px white);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
