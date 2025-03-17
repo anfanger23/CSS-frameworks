@@ -4,6 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'jetbrains': ['JetBrains Mono', 'monospace'],
+    
+      },
+      colors: {
+        darkgray: '#212121',
       },
     },
   },
